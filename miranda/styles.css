@@ -1,0 +1,213 @@
+@font-face {
+  font-family: one;
+  src: url(texts/1.ttf);
+}
+
+@font-face {
+  font-family: two;
+  src: url(texts/2.ttf);
+}
+
+@font-face {
+  font-family: three;
+  src: url(texts/3.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main{
+  height: 100%;
+  width: 100%;
+  background-color: #C5BDB4;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #C5BDB4;
+  border-bottom: 1px solid black;
+}
+
+/* Text on the left side */
+.navbar .left-text {
+  float: left;
+  color: grey;
+  padding: 14px 16px;
+  font-size: 0.8rem;
+  font-family: one;
+}
+
+/* Image at the center */
+.navbar .center-image {
+  display: block;
+  margin: 0 auto;
+  max-height: 40px;
+  padding: 10px;
+}
+
+/* Dropdown menu icon on the right side */
+.navbar .dropdown {
+  float: right;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+/* Dropdown content */
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 1rem;
+
+}
+
+/* Show the dropdown menu when clicked */
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive layout - hide the dropdown menu icon on small screens */
+@media screen and (max-width: 600px) {
+  .navbar .dropdown {
+    display: none;
+  }
+  .navbar .left-text, .navbar .center-image {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .navbar .left-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .box-2{
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+
+    .box .tagline{
+    font-family: three;
+    font-size: 1.5rem;
+    word-spacing: 2px;
+    }
+
+    .box .tagline-2{
+      font-family: three;
+      font-size: 5rem;
+      word-spacing: 2px;
+      text-align: center;
+      }
+
+      .box .tagline-next{
+        font-family: one;
+        font-size: 1rem;
+        word-spacing: 2px;
+        }
+        
+        .box .tagline-next-2{
+          font-family: one;
+          font-size: 1.5rem;
+          word-spacing: 2px;
+          text-align: center;
+        }
+
+          .box .tagline-next-b{
+            font-family: one;
+            font-size: 1rem;
+            word-spacing: 2px;
+            text-align: center;
+            margin-top: 25px;
+            }
+        
+
+
+    .box span{
+      background-color: orangered;
+      color: white;
+      border-radius: 2px;
+      padding: 2px;
+      font-size: 1rem;
+    }
+
+    /* Individual div styles */
+    .box {
+      flex-basis: calc(33.33% - 10px);
+      margin-bottom: 20px;
+      padding: 20px 0px;
+      margin: 20px 0px;
+      box-sizing: border-box;
+    }
+
+
+
+    .box .image:hover{
+     transform: scale(1.2); 
+     transition: transform 0.3s ease;
+     overflow: hidden;
+     transform-origin: center center;
+    }
+
+    .container{
+      padding: 0px 0px;
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .box {
+        flex-basis: 100%;
+      }
+    }
+
+    /* Image style */
+    .box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+    .page2 {
+      background-color: #C5BDB4;
+      height: 100%;
+      width: 100%;
+    }
+
+   .page2 h1 {
+      height: 70%;
+      width: 90%;
+      font-family: three;
+      font-size: 440px;
+      text-align: center;
+      overflow: hidden;
+      background-color: black;
+      color: #C5BDB4;
+      margin-left: 60px;
+      margin-top: 0px;
+    }
